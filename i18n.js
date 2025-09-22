@@ -2,6 +2,7 @@
 const translations = {
     pt: {
         // Navigation
+        'nav.home': 'Início',
         'nav.about': 'Sobre',
         'nav.experience': 'Experiência',
         'nav.skills': 'Habilidades',
@@ -70,6 +71,8 @@ const translations = {
         'projects.payments.description': 'Participei do desenvolvimento de APIs para soluções BaaS na Dock, criando microserviços serverless de pagamentos com alta disponibilidade em ambiente AWS. O projeto teve como foco a escalabilidade, segurança e confiabilidade das transações financeiras, permitindo integração rápida com parceiros e suporte a grande volume de operações.',
         'projects.leads2b.title': 'Plataforma de CRM Leads2b',
         'projects.leads2b.description': 'Contribuí para o desenvolvimento de um CRM inteligente que integra prospecção, marketing, vendas e atendimento em uma única plataforma. A solução incorporava inteligência artificial para acelerar a estratégia de Go-to-Market de empresas B2B, otimizando processos de aquisição de clientes e aumentando a eficiência comercial.',
+        'projects.conductor.title': 'Sistema de Conciliação Financeira',
+        'projects.conductor.description': 'Desenvolvimento e manutenção de sistemas de conciliação de transações de cartão de crédito na Conductor, utilizando PL/SQL e Java Spring Boot para garantir confiabilidade e performance em processos críticos de processamento financeiro.',
 
         // Contact Section
         'contact.title': 'Vamos Conversar?',
@@ -81,6 +84,7 @@ const translations = {
     },
     en: {
         // Navigation
+        'nav.home': 'Home',
         'nav.about': 'About',
         'nav.experience': 'Experience',
         'nav.skills': 'Skills',
@@ -149,6 +153,8 @@ const translations = {
         'projects.payments.description': 'I participated in the development of APIs for BaaS solutions at Dock, creating serverless payment microservices with high availability in AWS environment. The project focused on scalability, security, and reliability of financial transactions, enabling rapid integration with partners and support for high-volume operations.',
         'projects.leads2b.title': 'Leads2b CRM Platform',
         'projects.leads2b.description': 'I contributed to the development of an intelligent CRM that integrates prospecting, marketing, sales, and customer service in a single platform. The solution incorporated artificial intelligence to accelerate the Go-to-Market strategy for B2B companies, optimizing customer acquisition processes and increasing commercial efficiency.',
+        'projects.conductor.title': 'Financial Reconciliation System',
+        'projects.conductor.description': 'Development and maintenance of credit card transaction reconciliation systems at Conductor, using PL/SQL and Java Spring Boot to ensure reliability and performance in critical financial processing operations.',
 
         // Contact Section
         'contact.title': 'Let\'s Talk?',

@@ -673,10 +673,32 @@ body {
     background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
 }
 
+.projects .container {
+    max-width: 1600px;
+    padding: 0 2rem;
+}
+
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/* Grid específico para 4 projetos - 4 colunas em telas maiores */
+@media (min-width: 768px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .projects-grid {
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 1600px;
+        gap: 2.5rem;
+    }
 }
 
 .project-card {
