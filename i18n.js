@@ -18,8 +18,8 @@ const translations = {
         // About Section
         'about.title': 'Sobre Mim',
         'about.subtitle': 'Conheça um pouco da minha trajetória',
-        'about.description1': 'Sou Marcelo, formado em Sistemas para Internet pelo IFPB em 2014 e apaixonado por desenvolvimento de software. Ao longo de mais de 10 anos de experiência, atuei em projetos das mais variadas áreas de negócio com fábricas industriais, processadoras de cartões de crédito e no setor bancário (BaaS).',
-        'about.description2': 'Me especializei em arquitetura de software utilizando boas práticas e padrões de projetos modernos, buscando construir soluções robustas e escaláveis. Meu foco é ajudar empresas a superar desafios tecnológicos, impulsionar inovação e gerar valor real para seus clientes.',
+        'about.description1': 'Ao longo de mais de 10 anos de experiência, participei de projetos em diferentes segmentos, incluindo fábricas industriais, processadoras de cartões de crédito, fintechs B2B e o setor bancário (BaaS).',
+        'about.description2': 'Sou especializado em arquitetura de software, aplicando boas práticas e padrões modernos de projeto para desenvolver soluções robustas, escaláveis e sustentáveis. Meu propósito é apoiar empresas na superação de desafios tecnológicos, impulsionar a inovação e gerar valor real para seus clientes.',
         'about.stats.experience': 'Anos de Experiência',
         'about.stats.projects': 'Projetos Concluídos',
         'about.stats.companies': 'Empresas de Referência',
@@ -83,8 +83,8 @@ const translations = {
         // About Section
         'about.title': 'About Me',
         'about.subtitle': 'Get to know a bit about my journey',
-        'about.description1': 'I am Marcelo, graduated in Internet Systems from IFPB in 2014 and passionate about software development. Over more than 10 years of experience, I have worked on projects in various business areas with industrial factories, credit card processors, and in the banking sector (BaaS).',
-        'about.description2': 'I specialized in software architecture using best practices and modern design patterns, seeking to build robust and scalable solutions. My focus is helping companies overcome technological challenges, drive innovation, and generate real value for their clients.',
+        'about.description1': 'Over more than 10 years of experience, I have participated in projects across different segments, including industrial factories, credit card processors, B2B fintechs, and the banking sector (BaaS).',
+        'about.description2': 'I am specialized in software architecture, applying best practices and modern design patterns to develop robust, scalable, and sustainable solutions. My purpose is to support companies in overcoming technological challenges, driving innovation, and generating real value for their clients.',
         'about.stats.experience': 'Years of Experience',
         'about.stats.projects': 'Completed Projects',
         'about.stats.companies': 'Reference Companies',
