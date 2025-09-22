@@ -11,7 +11,7 @@ const translations = {
         // Hero Section
         'hero.greeting': 'Olá, eu sou',
         'hero.subtitle': 'Arquiteto de Soluções | Especialista em Cloud Computing e AWS',
-        'hero.description': 'Formado em Sistemas para Internet pelo IFPB em 2014 e apaixonado por desenvolvimento de software. Com mais de 10 anos de experiência, atuo criando soluções robustas e escaláveis para empresas dos setores bancário, industrial e fintech.',
+        'hero.description': 'Formado em Sistemas para Internet pelo IFPB em 2014, sou apaixonado por design e desenvolvimento de software. Com mais de 10 anos de experiência, crio soluções robustas e escaláveis para os setores bancário, industrial e fintech, unindo criatividade e eficiência.',
         'hero.contact_btn': 'Entre em Contato',
         'hero.projects_btn': 'Ver Projetos',
 
@@ -76,7 +76,7 @@ const translations = {
         // Hero Section
         'hero.greeting': 'Hi, I\'m',
         'hero.subtitle': 'Solutions Architect | Cloud Computing and AWS Specialist',
-        'hero.description': 'Graduated in Internet Systems from IFPB in 2014 and passionate about software development. With over 10 years of experience, I work creating robust and scalable solutions for companies in banking, industrial, and fintech sectors.',
+        'hero.description': 'Graduated in Internet Systems from IFPB in 2014, I am passionate about design and software development. With over 10 years of experience, I create robust and scalable solutions for banking, industrial, and fintech sectors, combining creativity and efficiency.',
         'hero.contact_btn': 'Get in Touch',
         'hero.projects_btn': 'View Projects',
 
