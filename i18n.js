@@ -28,6 +28,7 @@ const translations = {
         // Experience Section
         'experience.title': 'Experiência Profissional',
         'experience.subtitle': 'Minha trajetória profissional',
+        'experience.current': 'Atual',
         'experience.itau.title': 'Arquiteto de Soluções',
         'experience.itau.company': 'Itaú Unibanco',
         'experience.itau.period': 'Mar 2022 - Presente',
@@ -106,6 +107,7 @@ const translations = {
         // Experience Section
         'experience.title': 'Professional Experience',
         'experience.subtitle': 'My professional journey',
+        'experience.current': 'Current',
         'experience.itau.title': 'Solutions Architect',
         'experience.itau.company': 'Itaú Unibanco',
         'experience.itau.period': 'Mar 2022 - Present',

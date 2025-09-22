@@ -508,6 +508,74 @@ body {
     gap: 0.5rem;
 }
 
+/* Current Position Styles */
+.current-position {
+    position: relative;
+}
+
+.current-marker {
+    background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%) !important;
+    box-shadow: 0 0 0 4px #8b5cf6 !important;
+    animation: pulse-current 2s infinite;
+}
+
+.current-content {
+    background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%) !important;
+    border: 2px solid #8b5cf6 !important;
+    box-shadow: 0 15px 40px rgba(139, 92, 246, 0.15) !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.current-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #8b5cf6 0%, #7c3aed 100%);
+}
+
+.current-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
+}
+
+.current-position .timeline-title {
+    color: #6b21a8;
+    font-weight: 700;
+}
+
+.current-position .timeline-company {
+    color: #8b5cf6;
+    font-weight: 600;
+}
+
+.current-position .timeline-period {
+    color: #7c3aed;
+    font-weight: 600;
+}
+
+@keyframes pulse-current {
+    0%, 100% {
+        box-shadow: 0 0 0 4px #8b5cf6;
+    }
+    50% {
+        box-shadow: 0 0 0 8px rgba(139, 92, 246, 0.3);
+    }
+}
+
 .skill-tag {
     background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
     color: white;
