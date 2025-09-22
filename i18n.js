@@ -76,7 +76,7 @@ const translations = {
         'nav.contact': 'Contact',
 
         // Hero Section
-        'hero.greeting': 'Hello, I am',
+        'hero.greeting': 'Hi, I\'m',
         'hero.subtitle': 'Solutions Architect | Cloud Computing and AWS Specialist',
         'hero.description': 'Graduated in Internet Systems from IFPB in 2014 and passionate about software development. With over 10 years of experience, I work creating robust and scalable solutions for companies in banking, industrial, and fintech sectors.',
         'hero.contact_btn': 'Get in Touch',

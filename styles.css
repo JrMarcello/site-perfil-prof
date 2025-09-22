@@ -229,8 +229,10 @@ body {
 .hero-title {
     font-size: 3.5rem;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1.1;
     margin-bottom: 1rem;
+    word-wrap: break-word;
+    hyphens: auto;
 }
 
 .hero-subtitle {
@@ -946,6 +948,7 @@ body {
     .hero-title {
         font-size: 2.5rem;
         line-height: 1.1;
+        word-wrap: break-word;
     }
     
     .hero-subtitle {
@@ -1051,6 +1054,7 @@ body {
     .hero-title {
         font-size: 1.8rem;
         line-height: 1.1;
+        word-wrap: break-word;
     }
     
     .hero-subtitle {
@@ -1168,6 +1172,7 @@ body {
     
     .hero-title {
         font-size: 1.6rem;
+        word-wrap: break-word;
     }
     
     .section-title {
