@@ -229,12 +229,13 @@ body {
 }
 
 .hero-title {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     font-weight: 700;
     line-height: 1.1;
     margin-bottom: 1rem;
     word-wrap: break-word;
     hyphens: auto;
+    white-space: nowrap;
 }
 
 .hero-subtitle {
@@ -948,9 +949,10 @@ body {
     }
     
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
         line-height: 1.1;
         word-wrap: break-word;
+        white-space: normal;
     }
     
     .hero-subtitle {
@@ -1054,9 +1056,10 @@ body {
     }
     
     .hero-title {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
         line-height: 1.1;
         word-wrap: break-word;
+        white-space: normal;
     }
     
     .hero-subtitle {
@@ -1173,8 +1176,9 @@ body {
     }
     
     .hero-title {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
         word-wrap: break-word;
+        white-space: normal;
     }
     
     .section-title {
