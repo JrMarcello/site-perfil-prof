@@ -817,6 +817,24 @@ body {
     background: white;
 }
 
+.contact-description {
+    max-width: 900px;
+    margin: 2rem auto 0;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.contact-description p {
+    color: #6b7280;
+    line-height: 1.7;
+    font-size: 1.125rem;
+    margin: 0 0 1rem 0;
+}
+
+.contact-description p:last-child {
+    margin-bottom: 0;
+}
+
 .contact-content {
     display: flex;
     justify-content: center;
@@ -947,6 +965,7 @@ body {
     color: white;
     transform: translateY(-2px);
 }
+
 
 /* Responsive Design */
 @media (max-width: 1024px) {
@@ -1261,6 +1280,14 @@ body {
     .contact-card p {
         font-size: 0.85rem;
     }
+    
+    .contact-description {
+        padding: 0 1rem;
+    }
+    
+    .contact-description p {
+        font-size: 0.95rem;
+    }
 }
 
 @media (max-width: 360px) {
@@ -1280,6 +1307,10 @@ body {
     
     .section-title {
         font-size: 1.6rem;
+    }
+    
+    .contact-description {
+        padding: 0 0.75rem;
     }
     
     .profile-image {
@@ -1321,6 +1352,14 @@ body {
     .about-text p {
         font-size: 1rem;
         line-height: 1.6;
+    }
+    
+    .contact-description {
+        padding: 0 1.5rem;
+    }
+    
+    .contact-description p {
+        font-size: 1rem;
     }
     
     .timeline-skills {

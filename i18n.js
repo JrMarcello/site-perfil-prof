@@ -77,6 +77,7 @@ const translations = {
         // Contact Section
         'contact.title': 'Vamos Conversar?',
         'contact.subtitle': 'Entre em contato para discutirmos oportunidades',
+        'contact.description': 'Estou disponível para consultorias em arquitetura de software, modernização de sistemas e desenvolvimento de projetos freelancers. Se você tem um desafio tecnológico ou busca orientação especializada, posso apoiar na definição de estratégias, desenho de soluções e implementação de sistemas robustos e escaláveis que gerem valor real para o seu negócio.',
         'contact.email': 'Email',
         'contact.whatsapp': 'WhatsApp',
         'contact.linkedin': 'LinkedIn',
@@ -159,6 +160,7 @@ const translations = {
         // Contact Section
         'contact.title': 'Let\'s Talk?',
         'contact.subtitle': 'Get in touch to discuss opportunities',
+        'contact.description': 'I am available for consulting in software architecture, system modernization, and freelance project development. If you have a technological challenge or seek specialized guidance, I can support you in strategy definition, solution design, and implementation of robust and scalable systems that generate real value for your business.',
         'contact.email': 'Email',
         'contact.whatsapp': 'WhatsApp',
         'contact.linkedin': 'LinkedIn',
