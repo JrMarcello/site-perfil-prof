@@ -27,4 +27,4 @@ Este projeto está sob a licença MIT.
 ## 📞 Contato
 
 - LinkedIn: [Marcelo Junior](https://www.linkedin.com/in/marcelojunior21/)
-- Email: marcelojunior4406@gmail.com
+- Email: <marcelojunior4406@gmail.com>
