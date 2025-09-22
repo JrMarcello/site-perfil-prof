@@ -2,7 +2,6 @@
 const translations = {
     pt: {
         // Navigation
-        'nav.home': 'Início',
         'nav.about': 'Sobre',
         'nav.experience': 'Experiência',
         'nav.skills': 'Habilidades',
@@ -68,7 +67,6 @@ const translations = {
     },
     en: {
         // Navigation
-        'nav.home': 'Home',
         'nav.about': 'About',
         'nav.experience': 'Experience',
         'nav.skills': 'Skills',
