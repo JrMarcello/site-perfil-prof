@@ -96,55 +96,48 @@ A landing page possui responsividade completa com breakpoints otimizados:
 - Touch-friendly (elementos com tamanho adequado)
 - Viewport otimizada para zoom
 
-## 🚀 Deploy no AWS S3
-
-### 1. Criar Bucket S3
-```bash
-aws s3 mb s3://marcellojr-site
-```
-
-### 2. Configurar para Website Estático
-```bash
-aws s3 website s3://marcellojr-site --index-document index.html --error-document index.html
-```
-
-### 3. Upload dos Arquivos
-```bash
-aws s3 sync . s3://marcellojr-site --delete --exclude "*.git/*"
-```
-
-### 4. Configurar Permissões
-Adicione a seguinte política ao bucket:
-
-```json
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Sid": "PublicReadGetObject",
-            "Effect": "Allow",
-            "Principal": "*",
-            "Action": "s3:GetObject",
-            "Resource": "arn:aws:s3:::marcellojr-site/*"
-        }
-    ]
-}
-```
-
-### 5. CloudFront (Recomendado)
-Para melhor performance e HTTPS:
-- Crie uma distribuição CloudFront
-- Configure o bucket S3 como origem
-- Adicione certificado SSL/TLS
-- Configure cache policies
-
 ## 🌐 Deploy no GitHub Pages
 
-### Configuração Simples:
+### Configuração Automática (Recomendado):
 1. No GitHub, vá em **Settings > Pages**
 2. **Source**: Deploy from a branch
 3. **Branch**: main
-4. **URL**: https://jrmarcello.github.io/site-perfil-prof/
+4. **Folder**: / (root)
+5. **URL**: https://jrmarcello.github.io/site-perfil-prof/
+
+### Deploy Manual (Opcional):
+```bash
+# Clone o repositório
+git clone https://github.com/JrMarcello/site-perfil-prof.git
+
+# Navegue para o diretório
+cd site-perfil-prof
+
+# Faça suas alterações e commit
+git add .
+git commit -m "Atualização do site"
+git push origin main
+
+# O GitHub Pages fará o deploy automaticamente
+```
+
+### Vantagens do GitHub Pages:
+- ✅ **Gratuito** para repositórios públicos
+- ✅ **HTTPS automático** com certificado SSL
+- ✅ **Deploy automático** a cada push
+- ✅ **CDN global** para performance
+- ✅ **Domínio personalizado** suportado
+- ✅ **Integração nativa** com GitHub
+
+### Configurar Domínio Personalizado (Opcional):
+1. **Compre um domínio** (ex: marcellojr.com)
+2. **Configure DNS** apontando para GitHub Pages:
+   ```
+   A records: 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153
+   CNAME: www -> jrmarcello.github.io
+   ```
+3. **No GitHub**: Settings > Pages > Custom domain
+4. **Ative HTTPS** para o domínio personalizado
 
 ## ⚡ Performance
 
@@ -181,8 +174,11 @@ Para melhor performance e HTTPS:
 - ✅ **Imagens**: Foto de perfil + imagens profissionais
 - ✅ **SEO**: Otimizado para motores de busca
 - ✅ **Performance**: Carregamento rápido
+- ✅ **Acessibilidade**: WCAG 2.1 compliant
+- ✅ **PWA**: Progressive Web App configurado
 - ✅ **Git**: Versionado e no GitHub
-- ✅ **Deploy**: Pronto para S3/GitHub Pages
+- ✅ **Deploy**: Hospedado no GitHub Pages
+- ✅ **URL**: https://jrmarcello.github.io/site-perfil-prof/
 
 ## 📞 Contato
 
@@ -195,11 +191,13 @@ Para melhor performance e HTTPS:
 
 ## 🚀 Próximos Passos
 
-1. **Deploy**: Escolher entre S3 ou GitHub Pages
-2. **Domínio**: Configurar domínio personalizado
+1. **✅ Deploy**: Concluído no GitHub Pages
+2. **Domínio**: Configurar domínio personalizado (opcional)
 3. **Analytics**: Implementar Google Analytics
-4. **SSL**: Certificado HTTPS
-5. **Backup**: Estratégia de backup
+4. **✅ SSL**: Certificado HTTPS automático
+5. **✅ Backup**: Versionamento Git como backup
+6. **SEO**: Monitorar posicionamento nos buscadores
+7. **Performance**: Monitorar métricas de velocidade
 
 ---
 
