@@ -19,7 +19,7 @@ const translations = {
         // About Section
         'about.title': 'Sobre Mim',
         'about.subtitle': 'Conheça um pouco da minha trajetória',
-        'about.description1': 'Com mais de 10 anos de experiência, participei de diversos projetos — desde fábricas industriais até processadoras de cartões de crédito, fintechs B2B e o setor bancário (BaaS).',
+        'about.description1': 'Ao longo da minha carreira tive a oportunidade de atuar em diversos projetos, desde indústrias, processadoras de cartões de crédito, fintechs e até grandes bancos.',
         'about.description2': 'Me especializei em arquitetura de software, sempre buscando aplicar boas práticas e padrões modernos de projeto para criar soluções robustas, escaláveis e sustentáveis. Gosto de pensar a tecnologia como um motor de transformação capaz de impulsionar empresas a crescer e inovar.',
         'about.description3': 'O que me motiva é ajudar organizações a superar desafios complexos e transformar ideias em resultados reais para os clientes. A cada projeto, busco unir estratégia, inovação e simplicidade para entregar soluções que façam diferença de verdade.',
         'about.stats.experience': 'Anos de Experiência',
@@ -102,7 +102,7 @@ const translations = {
         // About Section
         'about.title': 'About Me',
         'about.subtitle': 'Get to know a bit about my journey',
-        'about.description1': 'Over more than 10 years of experience, I have participated in projects across different segments, including industrial factories, credit card processors, B2B fintechs, and the banking sector (BaaS).',
+        'about.description1': 'Throughout my career, I have had the opportunity to work on diverse projects, from industries to credit card processors, fintechs, and even large banks.',
         'about.description2': 'I am specialized in software architecture, applying best practices and modern design patterns to develop robust, scalable, and sustainable solutions. My purpose is to support companies in overcoming technological challenges, driving innovation, and generating real value for their clients.',
         'about.description3': 'What motivates me is helping organizations overcome complex challenges and turn ideas into real results for customers. In each project, I seek to unite strategy, innovation, and simplicity to deliver solutions that truly make a difference.',
         'about.stats.experience': 'Years of Experience',
