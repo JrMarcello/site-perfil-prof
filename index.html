@@ -57,12 +57,16 @@
                 <a href="#home">Marcelo Jr</a>
             </div>
             <div class="nav-menu" id="nav-menu">
-                <a href="#home" class="nav-link">Início</a>
-                <a href="#about" class="nav-link">Sobre</a>
-                <a href="#experience" class="nav-link">Experiência</a>
-                <a href="#skills" class="nav-link">Habilidades</a>
-                <a href="#projects" class="nav-link">Projetos</a>
-                <a href="#contact" class="nav-link">Contato</a>
+                <a href="#home" class="nav-link" data-i18n="nav.home">Início</a>
+                <a href="#about" class="nav-link" data-i18n="nav.about">Sobre</a>
+                <a href="#experience" class="nav-link" data-i18n="nav.experience">Experiência</a>
+                <a href="#skills" class="nav-link" data-i18n="nav.skills">Habilidades</a>
+                <a href="#projects" class="nav-link" data-i18n="nav.projects">Projetos</a>
+                <a href="#contact" class="nav-link" data-i18n="nav.contact">Contato</a>
+                <div class="language-selector">
+                    <button class="lang-btn active" data-lang="pt">PT</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
             </div>
             <button class="hamburger" id="hamburger" aria-label="Menu de navegação" aria-expanded="false">
                 <span class="bar"></span>
@@ -78,17 +82,17 @@
             <div class="hero-content">
                 <header class="hero-text">
                     <h1 class="hero-title">
-                        Olá, eu sou <span class="gradient-text">Marcelo Jr</span>
+                        <span data-i18n="hero.greeting">Olá, eu sou</span> <span class="gradient-text">Marcelo Jr</span>
                     </h1>
-                    <p class="hero-subtitle">Arquiteto de Soluções | Especialista em Cloud Computing e AWS</p>
-                    <p class="hero-description">
+                    <p class="hero-subtitle" data-i18n="hero.subtitle">Arquiteto de Soluções | Especialista em Cloud Computing e AWS</p>
+                    <p class="hero-description" data-i18n="hero.description">
                         Formado em Sistemas para Internet pelo IFPB em 2014 e apaixonado por desenvolvimento de software. 
                         Com mais de 10 anos de experiência, atuo criando soluções robustas e escaláveis para empresas 
                         dos setores bancário, industrial e fintech.
                     </p>
                     <div class="hero-buttons">
-                        <a href="#contact" class="btn btn-primary">Entre em Contato</a>
-                        <a href="#projects" class="btn btn-secondary">Ver Projetos</a>
+                        <a href="#contact" class="btn btn-primary" data-i18n="hero.contact_btn">Entre em Contato</a>
+                        <a href="#projects" class="btn btn-secondary" data-i18n="hero.projects_btn">Ver Projetos</a>
                     </div>
                     <div class="hero-social">
                         <a href="https://linkedin.com/in/marcelo-jr-9698874a" target="_blank" aria-label="LinkedIn">
@@ -124,17 +128,17 @@
     <section id="about" class="about" aria-labelledby="about-title">
         <div class="container">
             <header class="section-header">
-                <h2 id="about-title" class="section-title">Sobre Mim</h2>
-                <p class="section-subtitle">Conheça um pouco da minha trajetória</p>
+                <h2 id="about-title" class="section-title" data-i18n="about.title">Sobre Mim</h2>
+                <p class="section-subtitle" data-i18n="about.subtitle">Conheça um pouco da minha trajetória</p>
             </header>
             <div class="about-content">
                 <div class="about-text">
-                    <p>
+                    <p data-i18n="about.description1">
                         Sou Marcelo, formado em Sistemas para Internet pelo IFPB em 2014 e apaixonado por desenvolvimento de software. 
                         Ao longo de mais de 10 anos de experiência, atuei em projetos das mais variadas áreas de negócio com fábricas industriais, 
                         processadoras de cartões de crédito e no setor bancário (BaaS).
                     </p>
-                    <p>
+                    <p data-i18n="about.description2">
                         Me especializei em arquitetura de software utilizando boas práticas e padrões de projetos modernos, 
                         buscando construir soluções robustas e escaláveis. Meu foco é ajudar empresas a superar desafios tecnológicos, 
                         impulsionar inovação e gerar valor real para seus clientes.
@@ -142,15 +146,15 @@
                     <div class="about-stats">
                         <div class="stat">
                             <span class="stat-number">10+</span>
-                            <span class="stat-label">Anos de Experiência</span>
+                            <span class="stat-label" data-i18n="about.stats.experience">Anos de Experiência</span>
                         </div>
                         <div class="stat">
                             <span class="stat-number">50+</span>
-                            <span class="stat-label">Projetos Concluídos</span>
+                            <span class="stat-label" data-i18n="about.stats.projects">Projetos Concluídos</span>
                         </div>
                         <div class="stat">
                             <span class="stat-number">3</span>
-                            <span class="stat-label">Empresas de Referência</span>
+                            <span class="stat-label" data-i18n="about.stats.companies">Empresas de Referência</span>
                         </div>
                     </div>
                 </div>
@@ -165,17 +169,17 @@
     <section id="experience" class="experience" aria-labelledby="experience-title">
         <div class="container">
             <header class="section-header">
-                <h2 id="experience-title" class="section-title">Experiência Profissional</h2>
-                <p class="section-subtitle">Minha trajetória profissional</p>
+                <h2 id="experience-title" class="section-title" data-i18n="experience.title">Experiência Profissional</h2>
+                <p class="section-subtitle" data-i18n="experience.subtitle">Minha trajetória profissional</p>
             </header>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <h3 class="timeline-title">Arquiteto de Soluções</h3>
-                        <h4 class="timeline-company">Itaú Unibanco</h4>
-                        <span class="timeline-period">Mar 2022 - Presente</span>
-                        <p class="timeline-description">
+                        <h3 class="timeline-title" data-i18n="experience.itau.title">Arquiteto de Soluções</h3>
+                        <h4 class="timeline-company" data-i18n="experience.itau.company">Itaú Unibanco</h4>
+                        <span class="timeline-period" data-i18n="experience.itau.period">Mar 2022 - Presente</span>
+                        <p class="timeline-description" data-i18n="experience.itau.description">
                             Ajudando os times no Itaú a construir serviços e aplicações resilientes, escaláveis, 
                             seguras e de alta performance trabalhando, principalmente, com componentes e serviços da AWS. 
                             Atuando num contexto modernizado onde uma arquitetura complexa de microserviços é predominante, 
@@ -194,10 +198,10 @@
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <h3 class="timeline-title">Senior Software Engineering</h3>
-                        <h4 class="timeline-company">Dock</h4>
-                        <span class="timeline-period">Nov 2020 - Mar 2022</span>
-                        <p class="timeline-description">
+                        <h3 class="timeline-title" data-i18n="experience.dock.title">Senior Software Engineering</h3>
+                        <h4 class="timeline-company" data-i18n="experience.dock.company">Dock</h4>
+                        <span class="timeline-period" data-i18n="experience.dock.period">Nov 2020 - Mar 2022</span>
+                        <p class="timeline-description" data-i18n="experience.dock.description">
                             Atuei na squad Athos responsável por manter os produtos de Marketplace. 
                             Desenvolvimento, implementação e manutenção de microserviços e APIs para soluções de Banking as a Service (BaaS) 
                             numa arquitetura serverless provida na cloud AWS.
@@ -216,10 +220,10 @@
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <h3 class="timeline-title">Software Engineering</h3>
-                        <h4 class="timeline-company">Leads2b</h4>
-                        <span class="timeline-period">Jan 2020 - Out 2020</span>
-                        <p class="timeline-description">
+                        <h3 class="timeline-title" data-i18n="experience.leads2b.title">Software Engineering</h3>
+                        <h4 class="timeline-company" data-i18n="experience.leads2b.company">Leads2b</h4>
+                        <span class="timeline-period" data-i18n="experience.leads2b.period">Jan 2020 - Out 2020</span>
+                        <p class="timeline-description" data-i18n="experience.leads2b.description">
                             Integrando o time de produtos, estava responsável por desenvolver e manter todo ecossistema web 
                             que compõe a plataforma da Leads2b. Mantendo APIs em uma arquitetura mista com um monolito escrito em PHP (Codeigniter) 
                             e alguns microserviços escritos em Javascript (Nodejs).
@@ -242,12 +246,12 @@
     <section id="skills" class="skills" aria-labelledby="skills-title">
         <div class="container">
             <header class="section-header">
-                <h2 id="skills-title" class="section-title">Habilidades Técnicas</h2>
-                <p class="section-subtitle">Tecnologias e ferramentas que domino</p>
+                <h2 id="skills-title" class="section-title" data-i18n="skills.title">Habilidades Técnicas</h2>
+                <p class="section-subtitle" data-i18n="skills.subtitle">Tecnologias e ferramentas que domino</p>
             </header>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3 class="category-title">Backend</h3>
+                    <h3 class="category-title" data-i18n="skills.backend">Backend</h3>
                     <div class="skill-items">
                         <div class="skill-item">
                             <i class="fab fa-node-js skill-icon"></i>
@@ -273,7 +277,7 @@
                 </div>
                 
                 <div class="skill-category">
-                    <h3 class="category-title">DevOps & Cloud</h3>
+                    <h3 class="category-title" data-i18n="skills.devops">DevOps & Cloud</h3>
                     <div class="skill-items">
                         <div class="skill-item">
                             <i class="fab fa-aws skill-icon"></i>
@@ -299,7 +303,7 @@
                 </div>
                 
                 <div class="skill-category">
-                    <h3 class="category-title">Banco de Dados</h3>
+                    <h3 class="category-title" data-i18n="skills.database">Banco de Dados</h3>
                     <div class="skill-items">
                         <div class="skill-item">
                             <i class="fas fa-database skill-icon"></i>
@@ -331,8 +335,8 @@
     <section id="projects" class="projects" aria-labelledby="projects-title">
         <div class="container">
             <header class="section-header">
-                <h2 id="projects-title" class="section-title">Projetos em Destaque</h2>
-                <p class="section-subtitle">Alguns dos meus trabalhos mais relevantes</p>
+                <h2 id="projects-title" class="section-title" data-i18n="projects.title">Projetos em Destaque</h2>
+                <p class="section-subtitle" data-i18n="projects.subtitle">Alguns dos meus trabalhos mais relevantes</p>
             </header>
             <div class="projects-grid">
                 <div class="project-card">
@@ -350,8 +354,8 @@
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Arquitetura de Microserviços</h3>
-                        <p class="project-description">
+                        <h3 class="project-title" data-i18n="projects.microservices.title">Arquitetura de Microserviços</h3>
+                        <p class="project-description" data-i18n="projects.microservices.description">
                             Modernização de arquitetura no Itaú, transformando sistemas monolíticos em microserviços 
                             escaláveis e resilientes com padrões de design modernos.
                         </p>
@@ -378,8 +382,8 @@
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Cloud Infrastructure</h3>
-                        <p class="project-description">
+                        <h3 class="project-title" data-i18n="projects.cloud.title">Cloud Infrastructure</h3>
+                        <p class="project-description" data-i18n="projects.cloud.description">
                             Implementação de infraestrutura cloud completa na AWS com automação via Terraform, 
                             pipelines CI/CD e monitoramento de aplicações em produção.
                         </p>
@@ -406,8 +410,8 @@
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Banking as a Service</h3>
-                        <p class="project-description">
+                        <h3 class="project-title" data-i18n="projects.baas.title">Banking as a Service</h3>
+                        <p class="project-description" data-i18n="projects.baas.description">
                             Desenvolvimento de APIs para soluções BaaS na Dock, criando microserviços serverless 
                             para marketplace financeiro com alta disponibilidade.
                         </p>
@@ -426,8 +430,8 @@
     <section id="contact" class="contact" aria-labelledby="contact-title">
         <div class="container">
             <header class="section-header">
-                <h2 id="contact-title" class="section-title">Vamos Conversar?</h2>
-                <p class="section-subtitle">Entre em contato para discutirmos oportunidades</p>
+                <h2 id="contact-title" class="section-title" data-i18n="contact.title">Vamos Conversar?</h2>
+                <p class="section-subtitle" data-i18n="contact.subtitle">Entre em contato para discutirmos oportunidades</p>
             </header>
             <div class="contact-content">
                 <div class="contact-grid">
@@ -435,7 +439,7 @@
                         <div class="contact-icon">
                             <i class="fas fa-envelope"></i>
                         </div>
-                        <h3>Email</h3>
+                        <h3 data-i18n="contact.email">Email</h3>
                         <p><a href="mailto:marcelllo.dudk@gmail.com">marcelllo.dudk@gmail.com</a></p>
                     </div>
                     
@@ -443,7 +447,7 @@
                         <div class="contact-icon">
                             <i class="fab fa-whatsapp"></i>
                         </div>
-                        <h3>WhatsApp</h3>
+                        <h3 data-i18n="contact.whatsapp">WhatsApp</h3>
                         <p><a href="https://wa.me/5583988317867" target="_blank">+55 (83) 98831-7867</a></p>
                     </div>
                     
@@ -451,7 +455,7 @@
                         <div class="contact-icon">
                             <i class="fab fa-linkedin"></i>
                         </div>
-                        <h3>LinkedIn</h3>
+                        <h3 data-i18n="contact.linkedin">LinkedIn</h3>
                         <p><a href="https://linkedin.com/in/marcelo-jr-9698874a" target="_blank">marcelo-jr-9698874a</a></p>
                     </div>
                     
@@ -459,7 +463,7 @@
                         <div class="contact-icon">
                             <i class="fab fa-github"></i>
                         </div>
-                        <h3>GitHub</h3>
+                        <h3 data-i18n="contact.github">GitHub</h3>
                         <p><a href="https://github.com/JrMarcello" target="_blank">JrMarcello</a></p>
                     </div>
                 </div>
@@ -489,6 +493,7 @@
         </div>
     </footer>
 
+    <script src="i18n.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
