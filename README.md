@@ -1,6 +1,6 @@
-# Landing Page - Perfil Profissional
+# Landing Page - Marcelo Jr | Arquiteto de Soluções
 
-Uma landing page moderna e responsiva para apresentação de perfil profissional, otimizada para hospedagem em S3 da AWS.
+Uma landing page moderna e totalmente responsiva para apresentação do perfil profissional do Marcelo Jr, especialista em Cloud Computing e AWS, otimizada para hospedagem em S3 da AWS.
 
 ## 🚀 Características
 
@@ -8,107 +8,109 @@ Uma landing page moderna e responsiva para apresentação de perfil profissional
 - **Totalmente Responsiva**: Adaptada para todos os dispositivos (desktop, tablet, mobile)
 - **Performance Otimizada**: Carregamento rápido e otimizada para SEO
 - **Seções Completas**: Hero, Sobre, Experiência, Habilidades, Projetos e Contato
-- **Interatividade**: Animações on-scroll, menu mobile, formulário de contato
+- **Interatividade**: Animações on-scroll, menu mobile, sistema de notificações
 - **Pronta para S3**: Arquivos estáticos prontos para deploy em bucket S3
+- **Mobile-First**: Design otimizado prioritariamente para dispositivos móveis
 
 ## 📁 Estrutura do Projeto
 
 ```
 site-perfil-prof/
-├── index.html          # Página principal
-├── styles.css          # Estilos CSS
+├── index.html          # Página principal personalizada
+├── styles.css          # Estilos CSS responsivos
 ├── script.js           # JavaScript para interatividade
 ├── robots.txt          # Arquivo para SEO
 ├── sitemap.xml         # Sitemap para motores de busca
+├── sources/            # Pasta de imagens
+│   └── eu.jpeg         # Foto de perfil
+├── .gitignore          # Controle de versão
 └── README.md           # Este arquivo
 ```
+
+## 👨‍💼 Perfil Profissional
+
+**Marcelo Jr** - Arquiteto de Soluções especializado em Cloud Computing e AWS
+
+- **Formação**: Sistemas para Internet - IFPB (2014)
+- **Experiência**: 10+ anos em desenvolvimento de software
+- **Especialidades**: AWS, Node.js, Microserviços, Clean Architecture
+- **Setores**: Bancário, Fintech, Industrial
 
 ## 🎨 Seções da Landing Page
 
 ### 1. Hero Section
 - Apresentação principal com foto de perfil
+- Título profissional e especialidade
 - Botões de call-to-action
-- Links para redes sociais
+- Links para redes sociais (LinkedIn, GitHub, Email, WhatsApp)
 - Animação de scroll suave
 
 ### 2. Sobre Mim
-- Descrição profissional
-- Estatísticas de carreira
-- Imagem complementar
+- Descrição profissional completa
+- Estatísticas de carreira (10+ anos, 50+ projetos, 3 empresas)
+- Imagem de workspace profissional
 
 ### 3. Experiência Profissional
-- Timeline interativa
-- Histórico de cargos e empresas
+- Timeline interativa com 3 experiências principais:
+  - **Itaú Unibanco** (Mar 2022 - Presente) - Arquiteto de Soluções
+  - **Dock** (Nov 2020 - Mar 2022) - Senior Software Engineering
+  - **Leads2b** (Jan 2020 - Out 2020) - Software Engineering
 - Tags de tecnologias utilizadas
 
 ### 4. Habilidades Técnicas
-- Categorias organizadas (Frontend, Backend, DevOps)
-- Barras de progresso animadas
-- Ícones das tecnologias
+- **Backend**: Node.js (9), PHP (8), Python (7), Java (7)
+- **DevOps & Cloud**: AWS (9), Docker/Kubernetes (8), Terraform (7), CI/CD (6)
+- **Banco de Dados**: MySQL/PostgreSQL (8), MongoDB/DynamoDB (7), Redis (7), Elasticsearch (5)
+- Barras de progresso animadas com níveis de proficiência
 
 ### 5. Projetos em Destaque
-- Cards com hover effects
-- Links para demo e código
-- Tags de tecnologias
+- **Arquitetura de Microserviços**: Modernização no Itaú
+- **Cloud Infrastructure**: Infraestrutura AWS com Terraform
+- **Banking as a Service**: APIs BaaS na Dock
+- Cards com hover effects e imagens profissionais
 
 ### 6. Contato
-- Informações de contato
-- Formulário funcional
-- Validação de campos
+- Layout horizontal com 4 cards principais:
+  - **Email**: marcelllo.dudk@gmail.com
+  - **WhatsApp**: +55 (83) 98831-7867
+  - **LinkedIn**: linkedin.com/in/marcelo-jr-9698874a
+  - **GitHub**: github.com/JrMarcello
 
-## 🛠️ Personalização
+## 📱 Responsividade Avançada
 
-### Informações Pessoais
-Edite as seguintes informações no `index.html`:
+A landing page possui responsividade completa com breakpoints otimizados:
 
-- **Nome**: Substitua "Seu Nome" pelo seu nome real
-- **Título**: Altere "Desenvolvedor Full Stack | Especialista em [Sua Especialidade]"
-- **Descrição**: Personalize a descrição na seção hero
-- **Links Sociais**: Atualize os links do LinkedIn, GitHub, email e WhatsApp
-- **Foto de Perfil**: Substitua o placeholder pela sua foto
+### **Breakpoints Implementados:**
+- **Desktop**: > 1024px (Layout completo)
+- **Tablet**: 768px - 1024px (Grid 2x2)
+- **Mobile Large**: 480px - 768px (Layout vertical)
+- **Mobile Standard**: 360px - 480px (Compacto)
+- **Mobile Small**: < 360px (Ultra-compacto)
+- **Landscape**: Orientação horizontal otimizada
 
-### Experiência Profissional
-Na seção `#experience`, atualize:
-- Cargos e empresas
-- Períodos de trabalho
-- Descrições das responsabilidades
-- Tecnologias utilizadas
-
-### Habilidades
-Na seção `#skills`, personalize:
-- Categorias de habilidades
-- Nível de proficiência (data-level)
-- Ícones das tecnologias
-
-### Projetos
-Na seção `#projects`, adicione:
-- Imagens dos projetos
-- Descrições
-- Links para demo e repositório
-- Tecnologias utilizadas
-
-### Contato
-Na seção `#contact`, atualize:
-- Email
-- WhatsApp
-- LinkedIn
-- Localização
+### **Melhorias Mobile:**
+- Menu hamburger funcional
+- Botões em largura total
+- Fontes escaláveis
+- Espaçamentos otimizados
+- Touch-friendly (elementos com tamanho adequado)
+- Viewport otimizada para zoom
 
 ## 🚀 Deploy no AWS S3
 
 ### 1. Criar Bucket S3
 ```bash
-aws s3 mb s3://seu-bucket-name
+aws s3 mb s3://marcellojr-site
 ```
 
 ### 2. Configurar para Website Estático
 ```bash
-aws s3 website s3://seu-bucket-name --index-document index.html --error-document index.html
+aws s3 website s3://marcellojr-site --index-document index.html --error-document index.html
 ```
 
 ### 3. Upload dos Arquivos
 ```bash
-aws s3 sync . s3://seu-bucket-name --delete
+aws s3 sync . s3://marcellojr-site --delete --exclude "*.git/*"
 ```
 
 ### 4. Configurar Permissões
@@ -123,45 +125,84 @@ Adicione a seguinte política ao bucket:
             "Effect": "Allow",
             "Principal": "*",
             "Action": "s3:GetObject",
-            "Resource": "arn:aws:s3:::seu-bucket-name/*"
+            "Resource": "arn:aws:s3:::marcellojr-site/*"
         }
     ]
 }
 ```
 
-### 5. CloudFront (Opcional)
+### 5. CloudFront (Recomendado)
 Para melhor performance e HTTPS:
 - Crie uma distribuição CloudFront
 - Configure o bucket S3 como origem
 - Adicione certificado SSL/TLS
+- Configure cache policies
 
-## 📱 Responsividade
+## 🌐 Deploy no GitHub Pages
 
-A landing page é totalmente responsiva com breakpoints:
-- **Desktop**: > 1024px
-- **Tablet**: 768px - 1024px  
-- **Mobile**: < 768px
-- **Mobile Small**: < 480px
+### Configuração Simples:
+1. No GitHub, vá em **Settings > Pages**
+2. **Source**: Deploy from a branch
+3. **Branch**: main
+4. **URL**: https://jrmarcello.github.io/site-perfil-prof/
 
 ## ⚡ Performance
 
-- CSS e JavaScript otimizados
-- Imagens com lazy loading (pode ser implementado)
-- Fontes do Google Fonts com display=swap
-- Animações com CSS transforms para melhor performance
+- **CSS e JavaScript otimizados**
+- **Imagens do Unsplash** com URLs otimizadas
+- **Fontes do Google Fonts** com display=swap
+- **Animações CSS** para melhor performance
+- **Lazy loading** implementado via JavaScript
+- **Meta tags SEO** completas
 
 ## 🔧 Tecnologias Utilizadas
 
-- **HTML5**: Estrutura semântica
-- **CSS3**: Flexbox, Grid, Gradients, Animations
-- **JavaScript ES6+**: Interatividade e animações
-- **Font Awesome**: Ícones
+- **HTML5**: Estrutura semântica e acessível
+- **CSS3**: Flexbox, Grid, Gradients, Animations, Media Queries
+- **JavaScript ES6+**: Interatividade, animações e scroll effects
+- **Font Awesome**: Ícones profissionais
 - **Google Fonts**: Tipografia (Inter)
+- **Git**: Controle de versão
 
-## 📞 Suporte
+## 📊 SEO Otimizado
 
-Para dúvidas ou suporte, entre em contato através dos canais disponíveis na landing page.
+- **Meta tags** completas (title, description, keywords)
+- **Open Graph** para redes sociais
+- **Robots.txt** configurado
+- **Sitemap.xml** incluído
+- **Estrutura semântica** HTML5
+- **Alt tags** em todas as imagens
+
+## 🎯 Status do Projeto
+
+- ✅ **Design Completo**: Interface moderna e profissional
+- ✅ **Responsividade**: 100% responsivo em todos os dispositivos
+- ✅ **Personalização**: Informações reais do Marcelo Jr
+- ✅ **Imagens**: Foto de perfil + imagens profissionais
+- ✅ **SEO**: Otimizado para motores de busca
+- ✅ **Performance**: Carregamento rápido
+- ✅ **Git**: Versionado e no GitHub
+- ✅ **Deploy**: Pronto para S3/GitHub Pages
+
+## 📞 Contato
+
+**Marcelo Jr** - Arquiteto de Soluções
+- **Email**: marcelllo.dudk@gmail.com
+- **WhatsApp**: +55 (83) 98831-7867
+- **LinkedIn**: [linkedin.com/in/marcelo-jr-9698874a](https://linkedin.com/in/marcelo-jr-9698874a)
+- **GitHub**: [github.com/JrMarcello](https://github.com/JrMarcello)
+- **Localização**: João Pessoa, Paraíba
+
+## 🚀 Próximos Passos
+
+1. **Deploy**: Escolher entre S3 ou GitHub Pages
+2. **Domínio**: Configurar domínio personalizado
+3. **Analytics**: Implementar Google Analytics
+4. **SSL**: Certificado HTTPS
+5. **Backup**: Estratégia de backup
 
 ---
 
-**Desenvolvido com ❤️ para apresentar seu perfil profissional de forma impactante!**
+**Desenvolvido com ❤️ para apresentar o perfil profissional do Marcelo Jr de forma impactante!**
+
+*Landing page profissional, responsiva e otimizada para conversão.*

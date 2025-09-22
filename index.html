@@ -6,22 +6,50 @@
     <title>Marcelo Jr - Arquiteto de Soluções</title>
     <meta name="description" content="Arquiteto de Soluções especializado em Cloud Computing e AWS com 10+ anos de experiência">
     <meta name="keywords" content="arquiteto de soluções, cloud computing, aws, node.js, microserviços, desenvolvimento">
+    <meta name="author" content="Marcelo Jr">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#6366f1">
+    
+    <!-- Security -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
     
     <!-- Open Graph -->
     <meta property="og:title" content="Marcelo Jr - Arquiteto de Soluções">
     <meta property="og:description" content="Especialista em Cloud Computing e AWS com 10+ anos de experiência">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://seudominio.com">
+    <meta property="og:url" content="https://jrmarcello.github.io/site-perfil-prof/">
+    <meta property="og:image" content="https://jrmarcello.github.io/site-perfil-prof/sources/eu.jpeg">
+    <meta property="og:site_name" content="Marcelo Jr - Arquiteto de Soluções">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Marcelo Jr - Arquiteto de Soluções">
+    <meta name="twitter:description" content="Especialista em Cloud Computing e AWS com 10+ anos de experiência">
+    <meta name="twitter:image" content="https://jrmarcello.github.io/site-perfil-prof/sources/eu.jpeg">
     
     <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Icons -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="sources/eu.jpeg">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
     
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Skip link for accessibility -->
+    <a href="#home" class="skip-link">Pular para o conteúdo principal</a>
+    
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
@@ -36,19 +64,19 @@
                 <a href="#projects" class="nav-link">Projetos</a>
                 <a href="#contact" class="nav-link">Contato</a>
             </div>
-            <div class="hamburger" id="hamburger">
+            <button class="hamburger" id="hamburger" aria-label="Menu de navegação" aria-expanded="false">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
-            </div>
+            </button>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <main id="home" class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <div class="hero-text">
+                <header class="hero-text">
                     <h1 class="hero-title">
                         Olá, eu sou <span class="gradient-text">Marcelo Jr</span>
                     </h1>
@@ -76,7 +104,7 @@
                             <i class="fab fa-whatsapp"></i>
                         </a>
                     </div>
-                </div>
+                </header>
                 <div class="hero-image">
                     <div class="image-container">
                         <img src="sources/eu.jpeg" alt="Marcelo Jr" class="profile-image">
@@ -90,15 +118,15 @@
                 <i class="fas fa-chevron-down"></i>
             </a>
         </div>
-    </section>
+    </main>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section id="about" class="about" aria-labelledby="about-title">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Sobre Mim</h2>
+            <header class="section-header">
+                <h2 id="about-title" class="section-title">Sobre Mim</h2>
                 <p class="section-subtitle">Conheça um pouco da minha trajetória</p>
-            </div>
+            </header>
             <div class="about-content">
                 <div class="about-text">
                     <p>
@@ -134,12 +162,12 @@
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="experience">
+    <section id="experience" class="experience" aria-labelledby="experience-title">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Experiência Profissional</h2>
+            <header class="section-header">
+                <h2 id="experience-title" class="section-title">Experiência Profissional</h2>
                 <p class="section-subtitle">Minha trajetória profissional</p>
-            </div>
+            </header>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
@@ -211,12 +239,12 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <section id="skills" class="skills" aria-labelledby="skills-title">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Habilidades Técnicas</h2>
+            <header class="section-header">
+                <h2 id="skills-title" class="section-title">Habilidades Técnicas</h2>
                 <p class="section-subtitle">Tecnologias e ferramentas que domino</p>
-            </div>
+            </header>
             <div class="skills-grid">
                 <div class="skill-category">
                     <h3 class="category-title">Backend</h3>
@@ -300,16 +328,16 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <section id="projects" class="projects" aria-labelledby="projects-title">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Projetos em Destaque</h2>
+            <header class="section-header">
+                <h2 id="projects-title" class="section-title">Projetos em Destaque</h2>
                 <p class="section-subtitle">Alguns dos meus trabalhos mais relevantes</p>
-            </div>
+            </header>
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop&crop=center" alt="Microserviços e Arquitetura Distribuída">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop&crop=center" alt="Dashboard de dados e analytics representando arquitetura de microserviços">
                         <div class="project-overlay">
                             <div class="project-links">
                                 <a href="#" class="project-link" target="_blank">
@@ -337,7 +365,7 @@
                 
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=250&fit=crop&crop=center" alt="Desenvolvimento de Software e DevOps">
+                        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=250&fit=crop&crop=center" alt="Código de programação e desenvolvimento de software">
                         <div class="project-overlay">
                             <div class="project-links">
                                 <a href="#" class="project-link" target="_blank">
@@ -365,7 +393,7 @@
                 
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=250&fit=crop&crop=center" alt="Fintech e Banking Digital">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=250&fit=crop&crop=center" alt="Conceitos de fintech e pagamentos digitais">
                         <div class="project-overlay">
                             <div class="project-links">
                                 <a href="#" class="project-link" target="_blank">
@@ -395,12 +423,12 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="contact" class="contact" aria-labelledby="contact-title">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Vamos Conversar?</h2>
+            <header class="section-header">
+                <h2 id="contact-title" class="section-title">Vamos Conversar?</h2>
                 <p class="section-subtitle">Entre em contato para discutirmos oportunidades</p>
-            </div>
+            </header>
             <div class="contact-content">
                 <div class="contact-grid">
                     <div class="contact-card">

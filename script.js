@@ -14,8 +14,19 @@ window.addEventListener('scroll', () => {
 
 // Mobile menu toggle
 hamburger.addEventListener('click', () => {
+    const isActive = hamburger.classList.contains('active');
     hamburger.classList.toggle('active');
     navMenu.classList.toggle('active');
+    
+    // Update aria-expanded for accessibility
+    hamburger.setAttribute('aria-expanded', !isActive);
+    
+    // Prevent body scroll when menu is open
+    if (!isActive) {
+        document.body.style.overflow = 'hidden';
+    } else {
+        document.body.style.overflow = '';
+    }
 });
 
 // Close mobile menu when clicking on a link
@@ -23,7 +34,29 @@ navLinks.forEach(link => {
     link.addEventListener('click', () => {
         hamburger.classList.remove('active');
         navMenu.classList.remove('active');
+        hamburger.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
     });
+});
+
+// Close mobile menu when clicking outside
+document.addEventListener('click', (e) => {
+    if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+        hamburger.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+    }
+});
+
+// Close mobile menu on escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && navMenu.classList.contains('active')) {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+        hamburger.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+    }
 });
 
 // Smooth scrolling for navigation links
@@ -259,11 +292,58 @@ function animateCounters() {
     });
 }
 
+// Lazy loading for images
+const lazyLoadImages = () => {
+    const images = document.querySelectorAll('img[data-src]');
+    const imageObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const img = entry.target;
+                img.src = img.dataset.src;
+                img.classList.remove('lazy');
+                imageObserver.unobserve(img);
+            }
+        });
+    });
+
+    images.forEach(img => imageObserver.observe(img));
+};
+
+// Add loading states and error handling
+const addImageLoadingStates = () => {
+    const images = document.querySelectorAll('img');
+    images.forEach(img => {
+        img.addEventListener('load', () => {
+            img.classList.add('loaded');
+        });
+        
+        img.addEventListener('error', () => {
+            img.classList.add('error');
+            console.warn('Failed to load image:', img.src);
+        });
+    });
+};
+
+// Performance monitoring
+const monitorPerformance = () => {
+    if ('performance' in window) {
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                const perfData = performance.getEntriesByType('navigation')[0];
+                console.log('Page load time:', perfData.loadEventEnd - perfData.loadEventStart, 'ms');
+            }, 0);
+        });
+    }
+};
+
 // Initialize everything when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     observeSkillLevels();
     observeElements();
     animateCounters();
+    lazyLoadImages();
+    addImageLoadingStates();
+    monitorPerformance();
     
     // Add loading animation to hero content
     const heroContent = document.querySelector('.hero-text');

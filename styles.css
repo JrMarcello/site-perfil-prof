@@ -1212,6 +1212,75 @@ body {
 .skill-level[data-level="75"]::before { --level: 75%; }
 .skill-level[data-level="70"]::before { --level: 70%; }
 
+/* Image loading states */
+img {
+    transition: opacity 0.3s ease;
+}
+
+img.loaded {
+    opacity: 1;
+}
+
+img.error {
+    opacity: 0.5;
+    filter: grayscale(100%);
+}
+
+img.lazy {
+    opacity: 0;
+}
+
+/* Performance optimizations */
+* {
+    box-sizing: border-box;
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Focus styles for accessibility */
+*:focus {
+    outline: 2px solid #6366f1;
+    outline-offset: 2px;
+}
+
+.btn:focus,
+.nav-link:focus,
+.contact-card:focus {
+    outline: 2px solid #6366f1;
+    outline-offset: 2px;
+}
+
+/* Skip link for accessibility */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: #6366f1;
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    z-index: 10000;
+    border-radius: 4px;
+}
+
+.skip-link:focus {
+    top: 6px;
+}
+
 /* Smooth scroll offset for fixed navbar */
 section {
     scroll-margin-top: 70px;
