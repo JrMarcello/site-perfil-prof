@@ -64,12 +64,12 @@ const translations = {
         // Projects Section
         'projects.title': 'Projetos em Destaque',
         'projects.subtitle': 'Alguns dos meus trabalhos mais relevantes',
-        'projects.microservices.title': 'Arquitetura de Microserviços',
-        'projects.microservices.description': 'Modernização de arquitetura no Itaú, transformando sistemas monolíticos em microserviços escaláveis e resilientes com padrões de design modernos.',
-        'projects.cloud.title': 'Cloud Infrastructure',
-        'projects.cloud.description': 'Implementação de infraestrutura cloud completa na AWS com automação via Terraform, pipelines CI/CD e monitoramento de aplicações em produção.',
-        'projects.baas.title': 'Banking as a Service',
-        'projects.baas.description': 'Desenvolvimento de APIs para soluções BaaS na Dock, criando microserviços serverless para marketplace financeiro com alta disponibilidade.',
+        'projects.modernization.title': 'Modernização da Arquitetura de Solução',
+        'projects.modernization.description': 'Atuei na modernização da arquitetura dos serviços de empréstimos pessoais no Itaú, transformando sistemas monolíticos on-premise em microserviços escaláveis e resilientes, aplicando padrões modernos de design. A iniciativa incluiu a implementação de uma infraestrutura completa em AWS, com automação via Terraform, pipelines de CI/CD e monitoramento contínuo das aplicações em produção, garantindo maior eficiência operacional e redução de riscos.',
+        'projects.payments.title': 'Sistema e Pagamentos Financeiros',
+        'projects.payments.description': 'Participei do desenvolvimento de APIs para soluções BaaS na Dock, criando microserviços serverless de pagamentos com alta disponibilidade em ambiente AWS. O projeto teve como foco a escalabilidade, segurança e confiabilidade das transações financeiras, permitindo integração rápida com parceiros e suporte a grande volume de operações.',
+        'projects.leads2b.title': 'Plataforma Leads2b',
+        'projects.leads2b.description': 'Contribuí para o desenvolvimento de um CRM inteligente que integra prospecção, marketing, vendas e atendimento em uma única plataforma. A solução incorporava inteligência artificial para acelerar a estratégia de Go-to-Market de empresas B2B, otimizando processos de aquisição de clientes e aumentando a eficiência comercial.',
 
         // Contact Section
         'contact.title': 'Vamos Conversar?',
@@ -143,12 +143,12 @@ const translations = {
         // Projects Section
         'projects.title': 'Featured Projects',
         'projects.subtitle': 'Some of my most relevant work',
-        'projects.microservices.title': 'Microservices Architecture',
-        'projects.microservices.description': 'Architecture modernization at Itaú, transforming monolithic systems into scalable and resilient microservices with modern design patterns.',
-        'projects.cloud.title': 'Cloud Infrastructure',
-        'projects.cloud.description': 'Complete cloud infrastructure implementation on AWS with Terraform automation, CI/CD pipelines, and production application monitoring.',
-        'projects.baas.title': 'Banking as a Service',
-        'projects.baas.description': 'API development for BaaS solutions at Dock, creating serverless microservices for financial marketplace with high availability.',
+        'projects.modernization.title': 'Solution Architecture Modernization',
+        'projects.modernization.description': 'I worked on modernizing the architecture of personal loan services at Itaú, transforming on-premise monolithic systems into scalable and resilient microservices, applying modern design patterns. The initiative included implementing a complete infrastructure on AWS, with Terraform automation, CI/CD pipelines, and continuous monitoring of production applications, ensuring greater operational efficiency and risk reduction.',
+        'projects.payments.title': 'Financial Payment System',
+        'projects.payments.description': 'I participated in the development of APIs for BaaS solutions at Dock, creating serverless payment microservices with high availability in AWS environment. The project focused on scalability, security, and reliability of financial transactions, enabling rapid integration with partners and support for high-volume operations.',
+        'projects.leads2b.title': 'Leads2b Platform',
+        'projects.leads2b.description': 'I contributed to the development of an intelligent CRM that integrates prospecting, marketing, sales, and customer service in a single platform. The solution incorporated artificial intelligence to accelerate the Go-to-Market strategy for B2B companies, optimizing customer acquisition processes and increasing commercial efficiency.',
 
         // Contact Section
         'contact.title': 'Let\'s Talk?',
